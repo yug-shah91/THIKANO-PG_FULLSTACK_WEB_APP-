@@ -1,0 +1,9 @@
+﻿.idea/
+*.iml
+.env
+.env.*
+!.env.example
+uploads/
+node_modules/
+target/
+dist/
