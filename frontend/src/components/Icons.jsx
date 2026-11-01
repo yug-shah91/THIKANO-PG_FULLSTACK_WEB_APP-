@@ -1,0 +1,43 @@
+// Small inline icons (no icon library needed). All are 24x24 outline icons.
+const base = { width: 20, height: 20, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 1.8, strokeLinecap: 'round', strokeLinejoin: 'round', 'aria-hidden': true }
+const make = (children) => (p) => <svg {...base} {...p}>{children}</svg>
+
+export const HomeIcon = make(<><path d="M3 11l9-8 9 8" /><path d="M5 10v10h14V10" /><path d="M10 20v-6h4v6" /></>)
+export const PinIcon = make(<><path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z" /><circle cx="12" cy="10" r="2.5" /></>)
+export const SearchIcon = make(<><circle cx="11" cy="11" r="7" /><path d="M20 20l-3.5-3.5" /></>)
+
+// navigation
+export const DashboardIcon = make(<><rect x="3" y="3" width="7" height="9" rx="1" /><rect x="14" y="3" width="7" height="5" rx="1" /><rect x="14" y="12" width="7" height="9" rx="1" /><rect x="3" y="16" width="7" height="5" rx="1" /></>)
+export const BuildingIcon = make(<><path d="M4 21V5a1 1 0 011-1h9a1 1 0 011 1v16" /><path d="M15 9h4a1 1 0 011 1v11" /><path d="M3 21h18" /><path d="M8 8h3M8 12h3M8 16h3" /></>)
+export const BedIcon = make(<><path d="M3 18V7" /><path d="M3 14h18v4" /><path d="M21 14v-2a3 3 0 00-3-3h-7v5" /><circle cx="7" cy="11" r="1.6" /></>)
+export const ImageIcon = make(<><rect x="3" y="5" width="18" height="14" rx="2" /><circle cx="9" cy="11" r="2" /><path d="M21 16l-5-5-8 8" /></>)
+export const TagIcon = make(<><path d="M20 12l-8 8-9-9V3h8l9 9z" /><circle cx="7.5" cy="7.5" r="1.2" /></>)
+export const UsersIcon = make(<><circle cx="9" cy="8" r="3.2" /><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6" /><path d="M16 5.2a3 3 0 010 5.6M18 14.4c1.8.8 3 2.6 3 5.6" /></>)
+export const WalletIcon = make(<><path d="M3 7a2 2 0 012-2h13v4" /><path d="M3 7v11a2 2 0 002 2h15V9H5a2 2 0 01-2-2z" /><circle cx="16.5" cy="14.5" r="1" /></>)
+export const CalendarIcon = make(<><rect x="3" y="5" width="18" height="16" rx="2" /><path d="M8 3v4M16 3v4M3 10h18M9 16l2 2 4-4" /></>)
+export const EyeIcon = make(<><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" /><circle cx="12" cy="12" r="3" /></>)
+export const StarIcon = make(<path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9L12 3z" />)
+export const MessageIcon = make(<path d="M4 5h16v11H9l-5 4V5z" />)
+export const ClipboardIcon = make(<><rect x="6" y="4" width="12" height="17" rx="2" /><path d="M9 4V3h6v1M9 11h6M9 15h4" /></>)
+export const ListIcon = make(<path d="M8 6h13M8 12h13M8 18h13M3.5 6h.01M3.5 12h.01M3.5 18h.01" />)
+export const MapIcon = make(<path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14" />)
+export const SlidersIcon = make(<><path d="M4 7h10M18 7h2M4 17h2M10 17h10" /><circle cx="16" cy="7" r="2" /><circle cx="8" cy="17" r="2" /></>)
+export const ChevronDownIcon = make(<path d="M6 9l6 6 6-6" />)
+export const LogoutIcon = make(<><path d="M9 4H5a1 1 0 00-1 1v14a1 1 0 001 1h4" /><path d="M16 8l4 4-4 4M20 12H9" /></>)
+export const PlusIcon = make(<path d="M12 5v14M5 12h14" />)
+export const CheckIcon = make(<path d="M5 12.5l4.5 4.5L19 7.5" />)
+export const MenuIcon = make(<path d="M4 7h16M4 12h16M4 17h16" />)
+
+// facilities (matched by words in the owner's amenities text, see Amenities.jsx)
+export const WifiIcon = make(<><path d="M2 9a15 15 0 0120 0M5 12.5a10 10 0 0114 0M8.5 16a5 5 0 017 0" /><circle cx="12" cy="19" r="1" /></>)
+export const SnowIcon = make(<path d="M12 2v20M4.9 6l14.2 12M19.1 6L4.9 18" />)
+export const MealsIcon = make(<><path d="M6 3v8a2 2 0 002 2v8M10 3v8M6 7h4" /><path d="M17 3c-2 2-2 6 0 8v10" /></>)
+export const LaundryIcon = make(<><rect x="4" y="3" width="16" height="18" rx="2" /><circle cx="12" cy="13" r="4.5" /><path d="M8 7h.01M11 7h.01" /></>)
+export const ParkingIcon = make(<><rect x="4" y="3" width="16" height="18" rx="3" /><path d="M9 17V7h4a3 3 0 010 6H9" /></>)
+export const FlameIcon = make(<path d="M12 3c1 3 5 5 5 10a5 5 0 01-10 0c0-2 1-3 2-4 .5 1.5 1.5 2 2 2 0-3-1-5 1-8z" />)
+export const BoltIcon = make(<path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" />)
+export const ShieldIcon = make(<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z" />)
+export const TvIcon = make(<><rect x="3" y="5" width="18" height="12" rx="2" /><path d="M8 21h8M12 17v4" /></>)
+export const BathIcon = make(<><path d="M3 12h18v3a4 4 0 01-4 4H7a4 4 0 01-4-4v-3z" /><path d="M6 12V6a2 2 0 014 0M5 19l-1 2M19 19l1 2" /></>)
+export const FridgeIcon = make(<><rect x="6" y="2" width="12" height="20" rx="2" /><path d="M6 10h12M9 6v1M9 13v3" /></>)
+export const GymIcon = make(<path d="M6 8v8M3 10v4M18 8v8M21 10v4M6 12h12" />)
